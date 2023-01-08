@@ -35,13 +35,16 @@ typedef struct {
 const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
 const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "calcurse", NULL };
 const char *spcmd3[] = {"st", "-n", "keepassxc", "-g", "144x41", "-e", "nvim", NULL };
-const char *spcmd4[] = {"st", "-n", "habits", "-g", "100x29",  "-e", "/home/roina/.src/dijo-bin/pkg/dijo-bin/usr/bin/dijo", NULL };
+
+/* Fourth scratchpad for later use */
+const char *spcmd1[] = {"st", "-n", "spterm1", "-g", "120x34", NULL };
+
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
 	{"spranger",    spcmd2},
 	{"keepassxc",   spcmd3},
-	{"habits",   spcmd4},
+	{"spterm1",   spcmd4},
 };
 
 
@@ -63,7 +66,7 @@ static const Rule rules[] = {
 	{ NULL,		  "spterm",		NULL,		SPTAG(0),		1,			 -1 },
 	{ NULL,		  "spfm",		NULL,		SPTAG(1),		1,			 -1 },
 	{ NULL,		  "keepassxc",	NULL,		SPTAG(2),		1,			 -1 },
-	{ NULL,		  "habits",  	NULL,		SPTAG(3),		1,			 -1 },
+	{ NULL,		  "spterm1",  	NULL,		SPTAG(3),		1,			 -1 },
 };
 
 /* layout(s) */
